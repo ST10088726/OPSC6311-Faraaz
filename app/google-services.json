@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "54621506023",
+    "project_id": "opsc-registration-and-login",
+    "storage_bucket": "opsc-registration-and-login.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:54621506023:android:bb8866e1d525bb65641542",
+        "android_client_info": {
+          "package_name": "com.example.prototype"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "54621506023-5v2nld5qambd79uqqqpd5l6e8aog2hsd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrRBSjcqXAjLqGjw4pjV-oIfPJix5ZIG0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "54621506023-5v2nld5qambd79uqqqpd5l6e8aog2hsd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

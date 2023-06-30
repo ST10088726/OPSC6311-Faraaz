@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Prototype</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+    <string name="no_account_sign_up_here">No Account ,<b>Sign Up Here!</b></string>
+    <string name="already_registered_login_here">Already Registered, <b>Login Here!</b></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

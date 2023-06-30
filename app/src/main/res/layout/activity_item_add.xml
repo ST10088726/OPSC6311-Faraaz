@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    tools:context=".ItemAddActivity">
+    <RelativeLayout
+        android:id="@+id/toolbarR1"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/toolbar1">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Back button"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/transparent"
+            android:padding="5dp"
+            android:src="@drawable/baseline_arrow_back_24" />
+
+        <ImageView
+            android:id="@+id/iconIv"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:contentDescription="Logo of app"
+            android:src="@drawable/app_logo_removebg"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/backBtn"
+            />
+
+        <!--Title-->
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add a new Item"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/iconIv"
+            android:textSize="20sp" />
+
+        <!--Attach item button
+         <ImageButton
+             android:id="@+id/addItemGalleryBtn"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentEnd="true"
+             android:layout_marginStart="20dp"
+             android:layout_marginTop="10dp"
+             android:layout_marginEnd="100dp"
+             android:layout_marginBottom="20dp"
+             android:background="@android:color/transparent"
+             android:padding="5dp"
+             android:src="@drawable/browse_gallery"/>-->
+         <ImageButton
+             android:id="@+id/addItemBtn"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentEnd="true"
+             android:layout_marginStart="10dp"
+             android:layout_marginTop="10dp"
+             android:layout_marginEnd="10dp"
+             android:layout_marginBottom="10dp"
+             android:background="@android:color/transparent"
+             android:padding="5dp"
+             android:contentDescription="Camera"
+             android:src="@drawable/add_a_photo"/>
+     </RelativeLayout>
+
+     <!--Input Title-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/titleTil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="230dp"
+        app:hintEnabled="false">
+
+        <EditText
+            android:id="@+id/etItemName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/button_shape3"
+            android:hint="Enter Item Name"
+            android:drawablePadding="10dp"
+            android:inputType="textPersonName|textCapWords"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            android:textSize="16sp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Input Description-->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dateTil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_below="@+id/titleTil"
+        android:layout_marginTop="5dp"
+        app:hintEnabled="false"
+        >
+
+        <EditText
+            android:id="@+id/etDate"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/button_shape3"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            android:hint="EnterDate"
+            android:inputType="textMultiLine|textCapSentences"
+            android:textSize="16sp"
+            android:drawablePadding="10dp"/>
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+<com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/descriptionTil"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="30dp"
+    android:layout_marginEnd="30dp"
+    android:layout_below="@+id/dateTil"
+    android:layout_marginTop="5dp"
+    app:hintEnabled="false"
+    >
+
+    <EditText
+        android:id="@+id/etItemDescription"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/button_shape3"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"
+        android:hint="Item Description"
+        android:inputType="textMultiLine|textCapSentences"
+        android:textSize="16sp"
+        android:drawablePadding="10dp"/>
+
+
+
+</com.google.android.material.textfield.TextInputLayout>
+
+    <!--Pick category from dialog-->
+    <Spinner
+        android:id="@+id/spinnerNames"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descriptionTil"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_shape3"
+        android:minHeight="48dp"
+        android:hint="Item Category"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"
+        android:textSize="16sp"
+        tools:ignore="SpeakableTextPresentCheck"/>
+
+    <!--Button:Upload picture-->
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerNames"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="32dp"
+        android:text="Save Data"
+        android:textColor="@color/white"/>
+
+
+
+
+
+</RelativeLayout>
